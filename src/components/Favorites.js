@@ -6,7 +6,7 @@ function Favorites() {
     return (
         <div className="container mx-auto mt-10"> 
             <h3 className="text-sm font-semibold mb-3">Favoriler</h3>
-            <div className="grid grid-cols-8 gap-1 rounded-lg">
+            <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-1 rounded-lg">
                 {
                     productsData.map(item => (
                         <div className="bg-white relative flex flex-col items-center text-center gap-y-1 p-3 

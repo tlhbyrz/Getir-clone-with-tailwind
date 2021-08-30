@@ -5,7 +5,7 @@ import { RiUserAddFill } from "react-icons/ri"
 
 function Header() {
     return (
-        <header className="bg-brand-color">
+        <header className="bg-brand-color px-3 xs:px-0">
             <div className="container mx-auto h-11 flex items-center justify-between">
             <a href="#">
                 <img data-testid="main-image"
@@ -13,17 +13,17 @@ function Header() {
                     alt="Getir" shape="NORMAL"/>
             </a> 
             
-            <nav className="flex gap-x-8 text-sm font-semibold">
+            <nav className="flex gap-x-3 sm:gap-x-8 text-xs sm:text-sm font-semibold">
                 <a href="#" className="flex items-center gap-x-1  text-white text-opacity-75 transition-all hover:text-opacity-100">
-                    <BiGlobe size={18} />
+                    <BiGlobe size={18} className="hidden xs:block" />
                     Türkçe (TR)
                 </a>
                 <a href="#" className="flex items-center gap-x-1 text-white text-opacity-75 transition-all hover:text-opacity-100">
-                    <RiUserFill size={18} />
+                    <RiUserFill size={18} className="hidden xs:block"/>
                     Giriş Yap
                 </a>
                 <a href="#" className="flex items-center gap-x-1 text-white text-opacity-75 transition-all hover:text-opacity-100">
-                    <RiUserAddFill size={18} />
+                    <RiUserAddFill size={18} className="hidden xs:block"/>
                     Kayıt Ol
                 </a>
             </nav>

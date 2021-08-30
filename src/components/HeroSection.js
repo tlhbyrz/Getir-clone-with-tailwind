@@ -27,25 +27,26 @@ function HeroSection() {
 	}
 
     return (
-        <section className="relative before:bg-gradient-to-r before:from-purple-600 before:to-transparent before:absolute before:inset-0 before:w-full before:h-[500px] before:z-10">
+        <section className="relative before:bg-gradient-to-r before:from-purple-600 before:to-transparent before:absolute before:inset-0 before:w-full before:h-screen sm:before:h-[500px] before:z-10">
             <Slider {...settings}>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg" alt="" />
+                    <img className="w-full h-screen sm:h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg" alt="" />
                 </div>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg" alt="" />
+                    <img className="w-full h-screen sm:h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg" alt="" />
                 </div>
             </Slider>
-            <div className="container flex justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-10">
-                <div>
-                    <img  height={180} width={180}
+            <div className="container px-3 xs:px-0 flex flex-col gap-y-4 justify-center items-center xs:flex-col sm:flex-row sm:justify-between
+            absolute top-0 left-1/2 -translate-x-1/2 h-full z-10">
+                <div className="flex flex-row gap-x-4 items-center sm:flex-col sm:items-baseline">
+                    <img  className="w-24 h-24 sm:w-44 sm:h-44"
                         src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg" />
                    
-                    <h3 className="text-white font-semibold text-4xl mt-6">
+                    <h3 className="text-white font-semibold text-2xl xs:text-4xl sm:mt-6">
                         Dakikalar içinde <br/> kapınızda
                     </h3>
                 </div>
-                <div className="w-[400px] bg-gray-50 p-6 rounded-lg">
+                <div className="w-full xs:w-[400px] bg-gray-50 p-6 rounded-lg">
                     <h3 className="text-purple-600 font-semibold text-center">Giriş yap veya kayıt ol</h3>
                     <div className="grid gap-y-4">
                         <div className="flex mt-8 gap-x-2">
